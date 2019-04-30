@@ -1,4 +1,4 @@
-# WP Strater 3.0 - composer.json example
+# WP Starter 3.0 - composer.json example
 
 under development.
 
