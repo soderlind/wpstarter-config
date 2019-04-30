@@ -1,0 +1,4 @@
+[
+	"wp core install",
+	"wp plugin update --all"
+]

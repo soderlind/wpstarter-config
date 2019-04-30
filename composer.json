@@ -1,0 +1,44 @@
+{
+	"name": "dss-web/nettsteder",
+	"type": "project",
+	"description": "nettsteder.regjeringen.no",
+	"license": "proprietary",
+	"require": {
+		"composer/installers": "^1.6",
+		"wecodemore/wpstarter": "^3",
+		"johnpbloch/wordpress": "^5@stable"
+	},
+	"minimum-stability": "dev",
+	"extra": {
+		"installer-paths": {
+			"public/content/plugins/{$name}": [
+				"type:wordpress-plugin"
+			],
+			"public/content/mu-plugins/{$name}": [
+				"type:wordpress-muplugin"
+			],
+			"public/content/themes/{$name}": [
+				"type:wordpress-theme"
+			],
+			"public/content/{$name}": [
+				"type:wordpress-dropin"
+			]
+		},
+		"wordpress-content-dir": "public/content",
+		"wordpress-install-dir": "public/wp"
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"tree -d -L 3"
+		],
+        "post-update-cmd": [
+			"tree -d -L 3"
+		]
+    },
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		}
+	]
+}
