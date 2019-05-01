@@ -1,3 +1,4 @@
 {
-	"move-content": true
+	"move-content": true,
+	"wp-cli-commands": "./wp-cli-commands.json"
 }
